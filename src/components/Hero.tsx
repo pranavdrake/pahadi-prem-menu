@@ -12,14 +12,14 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-pine-dark/90 to-pine-dark/70 -z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-white/90 to-white/70 -z-10"></div>
       
       <div className="absolute top-10 left-10 animate-sway opacity-80">
-        <TreePine size={40} className="text-pine-light" />
+        <TreePine size={40} className="text-pine-dark" />
       </div>
       
       <div className="absolute top-20 right-10 animate-float opacity-70">
-        <CloudMoon size={30} className="text-pine-light" />
+        <CloudMoon size={30} className="text-pine-dark" />
       </div>
       
       {/* Pine Trees Forest Elements */}
@@ -28,7 +28,7 @@ const Hero = () => {
           <div key={index} className="relative" style={{ height: `${70 + index * 10}px` }}>
             <TreePine 
               size={30 + (index * 8)} 
-              className="text-pine-light opacity-70 animate-sway" 
+              className="text-pine-dark opacity-70 animate-sway" 
               style={{ animationDelay: `${index * 0.4}s` }}
             />
           </div>
@@ -55,19 +55,19 @@ const Hero = () => {
       <div 
         className={`max-w-3xl transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
       >
-        <h1 className="text-5xl md:text-7xl mb-4 drop-shadow-sm">
+        <h1 className="text-5xl md:text-7xl mb-4 drop-shadow-sm text-pine-dark">
           Sharma Bhojnalya
         </h1>
         
         <div className="flex items-center justify-center mb-6 space-x-2">
           <Heart className="text-primary animate-pulse" size={24} />
-          <p className="text-xl md:text-2xl text-secondary font-handwriting">
+          <p className="text-xl md:text-2xl text-pine-dark font-handwriting">
             jahan khana bhi prem se pakta hai
           </p>
           <Heart className="text-primary animate-pulse" size={24} />
         </div>
         
-        <p className="text-lg md:text-xl text-pine-light/90 mb-8 font-sans font-light">
+        <p className="text-lg md:text-xl text-pine-dark/90 mb-8 font-sans font-light">
           Aaj raat sirf hum dono ke liye – Sharma Bhojnalya mein prem paros rahe hain.
         </p>
         

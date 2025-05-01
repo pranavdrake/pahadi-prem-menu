@@ -60,8 +60,8 @@ const MenuSection = ({ title, subtitle, items, index }: MenuSectionProps) => {
       
       <div className="max-w-4xl mx-auto reveal" style={{ transitionDelay: '0.2s' }}>
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl mb-3">{title}</h2>
-          <p className="text-pine-light/70 font-sans">{subtitle}</p>
+          <h2 className="text-3xl md:text-4xl mb-3 text-pine-dark">{title}</h2>
+          <p className="text-pine-dark/70 font-sans">{subtitle}</p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-6">

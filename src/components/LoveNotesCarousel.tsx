@@ -41,7 +41,7 @@ const LoveNotesCarousel = () => {
 
   return (
     <section className="py-20 px-4 relative photos-carousel overflow-hidden">
-      <div className="absolute inset-0 bg-pine-gradient -z-10 opacity-70"></div>
+      <div className="absolute inset-0 bg-white/70 -z-10"></div>
       
       {/* Pine Trees Decoration */}
       <div className="absolute bottom-0 left-0 w-full flex justify-between">
@@ -77,7 +77,7 @@ const LoveNotesCarousel = () => {
           "transition-all duration-1000 ease-out transform",
           isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
         )}>
-          <h2 className="text-3xl md:text-4xl mb-8 text-center font-handwriting">
+          <h2 className="text-3xl md:text-4xl mb-8 text-center font-handwriting text-pine-dark">
             Pahadi Prem Patr
           </h2>
           
@@ -92,7 +92,7 @@ const LoveNotesCarousel = () => {
                 {photos.map((photo, index) => (
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                     <div className="p-2">
-                      <div className="overflow-hidden rounded-lg border-2 border-accent bg-pine-dark p-2 shadow-lg transition-all hover:scale-105">
+                      <div className="overflow-hidden rounded-lg border-2 border-accent bg-white/80 p-2 shadow-lg transition-all hover:scale-105">
                         <div className="aspect-square overflow-hidden">
                           <img 
                             src={photo} 
@@ -108,15 +108,15 @@ const LoveNotesCarousel = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="absolute left-0 bg-primary text-primary-foreground hover:bg-accent" />
-              <CarouselNext className="absolute right-0 bg-primary text-primary-foreground hover:bg-accent" />
+              <CarouselPrevious className="absolute -left-12 bg-white border border-primary/20 text-primary hover:bg-primary hover:text-white" />
+              <CarouselNext className="absolute -right-12 bg-white border border-primary/20 text-primary hover:bg-primary hover:text-white" />
             </Carousel>
           </div>
           
           <div className="flex justify-center space-x-2 mt-8">
-            <TreePine size={24} className="text-pine-light opacity-80" />
+            <TreePine size={24} className="text-pine-dark opacity-80" />
             <Heart className="text-primary h-6 w-6 mx-2" />
-            <TreePine size={24} className="text-pine-light opacity-80" />
+            <TreePine size={24} className="text-pine-dark opacity-80" />
           </div>
         </div>
       </div>
