@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import Hero from '../components/Hero';
 import MenuSection from '../components/MenuSection';
-import LoveNotesCarousel from '../components/LoveNotesCarousel';
+import PhotoCarousel from '../components/PhotoCarousel';
 import Footer from '../components/Footer';
 
 const menuData = [
@@ -142,7 +142,7 @@ const Index = () => {
           index={index}
         />
       ))}
-      <LoveNotesCarousel />
+      <PhotoCarousel />
       <Footer />
     </div>
   );
