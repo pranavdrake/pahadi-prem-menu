@@ -71,7 +71,7 @@ const menuData = [
     ]
   },
   {
-    title: "Essentials",
+    title: "Two peas in a pod? ",
     subtitle: "Aadat-E-Ishq",
     items: [
       {
