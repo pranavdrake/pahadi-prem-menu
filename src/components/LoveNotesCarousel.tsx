@@ -49,7 +49,7 @@ const LoveNotesCarousel = () => {
           <div key={index} className="relative">
             <TreePine 
               size={40 + (index * 15)} 
-              className="text-theme-black opacity-70 animate-sway" 
+              className="text-pine-dark opacity-70 animate-sway" 
               style={{ animationDelay: `${index * 0.3}s` }}
             />
           </div>
@@ -59,7 +59,7 @@ const LoveNotesCarousel = () => {
       {/* Prayer flags decoration */}
       <div className="absolute top-0 left-0 right-0 flex justify-center w-full">
         <div className="flex space-x-2">
-          {['bg-red-500', 'bg-theme-gold', 'bg-theme-yellow', 'bg-theme-gold', 'bg-red-500'].map((color, index) => (
+          {['bg-red-500', 'bg-yellow-500', 'bg-green-500', 'bg-blue-500', 'bg-purple-500'].map((color, index) => (
             <div 
               key={index}
               className={`${color} h-16 w-12 animate-flutter`} 
@@ -77,7 +77,7 @@ const LoveNotesCarousel = () => {
           "transition-all duration-1000 ease-out transform",
           isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
         )}>
-          <h2 className="text-3xl md:text-4xl mb-8 text-center font-handwriting text-theme-gold">
+          <h2 className="text-3xl md:text-4xl mb-8 text-center font-handwriting">
             Pahadi Prem Patr
           </h2>
           
@@ -92,7 +92,7 @@ const LoveNotesCarousel = () => {
                 {photos.map((photo, index) => (
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                     <div className="p-2">
-                      <div className="overflow-hidden rounded-lg border-2 border-theme-gold bg-theme-black p-2 shadow-lg transition-all hover:scale-105">
+                      <div className="overflow-hidden rounded-lg border-2 border-accent bg-pine-dark p-2 shadow-lg transition-all hover:scale-105">
                         <div className="aspect-square overflow-hidden">
                           <img 
                             src={photo} 
@@ -100,23 +100,23 @@ const LoveNotesCarousel = () => {
                             className="h-full w-full object-cover" 
                           />
                         </div>
-                        <div className="absolute -bottom-3 -right-3 bg-theme-gold w-12 h-12 -rotate-12 flex items-center justify-center rounded-full">
-                          <span className="text-xs font-medium text-theme-black rotate-12">❤️</span>
+                        <div className="absolute -bottom-3 -right-3 bg-primary w-12 h-12 -rotate-12 flex items-center justify-center rounded-full">
+                          <span className="text-xs font-medium text-primary-foreground rotate-12">💚</span>
                         </div>
                       </div>
                     </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="absolute left-0 bg-theme-gold text-theme-black hover:bg-theme-yellow" />
-              <CarouselNext className="absolute right-0 bg-theme-gold text-theme-black hover:bg-theme-yellow" />
+              <CarouselPrevious className="absolute left-0 bg-primary text-primary-foreground hover:bg-accent" />
+              <CarouselNext className="absolute right-0 bg-primary text-primary-foreground hover:bg-accent" />
             </Carousel>
           </div>
           
           <div className="flex justify-center space-x-2 mt-8">
-            <TreePine size={24} className="text-theme-gold opacity-80" />
-            <Heart className="text-theme-gold h-6 w-6 mx-2" />
-            <TreePine size={24} className="text-theme-gold opacity-80" />
+            <TreePine size={24} className="text-pine-light opacity-80" />
+            <Heart className="text-primary h-6 w-6 mx-2" />
+            <TreePine size={24} className="text-pine-light opacity-80" />
           </div>
         </div>
       </div>

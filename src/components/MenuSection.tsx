@@ -18,12 +18,12 @@ interface MenuSectionProps {
 const MenuItem = ({ name, description, personalNote }: MenuItemProps) => {
   return (
     <div className="menu-card bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md mb-6">
-      <h3 className="text-xl font-handwriting mb-2 flex items-center">
+      <h3 className="text-xl font-handwriting mb-2 flex items-center text-pine-dark">
         {name}
-        <Heart className="text-green-500 h-4 w-4 ml-2" />
+        <Heart className="text-primary h-4 w-4 ml-2" />
       </h3>
-      <p className="text-gray-700 mb-3 text-sm">{description}</p>
-      <p className="text-pine-dark italic border-t border-dashed border-gray-200 pt-2 mt-2 text-sm font-medium">"{personalNote}"</p>
+      <p className="text-pine-dark mb-3 text-sm">{description}</p>
+      <p className="text-pine-dark italic border-t border-dashed border-pine-dark/20 pt-2 mt-2 text-sm font-medium">"{personalNote}"</p>
     </div>
   );
 };
@@ -61,7 +61,7 @@ const MenuSection = ({ title, subtitle, items, index }: MenuSectionProps) => {
       <div className="max-w-4xl mx-auto reveal" style={{ transitionDelay: '0.2s' }}>
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl mb-3">{title}</h2>
-          <p className="text-pine-dark/70 font-sans">{subtitle}</p>
+          <p className="text-pine-light/70 font-sans">{subtitle}</p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-6">
