@@ -16,7 +16,7 @@ const menuData = [
         personalNote: "Like your warm hands on cold days — soft, filling, and made for me."
       },
       {
-        name: "Momos",
+        name: "Momo",
         description: "Juicy dumplings wrapped in joy, spicy enough to make you coy.",
         personalNote: "Our midnight momo runs — now served with love and chutney!"
       }
