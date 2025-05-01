@@ -7,28 +7,18 @@ import Footer from '../components/Footer';
 
 const menuData = [
   {
-    title: "Pahadon Se Pyaar Tak – Shuruaat",
-    subtitle: "Our beginning, like the first light on mountains",
+    title: "Mohabbat ki Pehli Bhook – Shuruat Siddu aur Momon se",
+  subtitle: "The first taste of love, wrapped in warmth and spice",
     items: [
       {
-        name: "Pahadi Aloo Tikki",
-        description: "Crispy potato patties with mountain herbs",
-        personalNote: "Remember our first picnic? You loved these!"
+        name: "Siddu",
+        description: "Steamed wheat buns stuffed with love and spice, a Himachali hug in every slice.",
+        personalNote: "Like your warm hands on cold days — soft, filling, and made for me."
       },
       {
-        name: "Himachali Paneer Pakode",
-        description: "Soft cottage cheese fritters with mint chutney",
-        personalNote: "Made with the local cheese you always talk about"
-      },
-      {
-        name: "Buransh Sharbat",
-        description: "Sweet rhododendron flower drink",
-        personalNote: "Like the flowers we saw on our first hike together"
-      },
-      {
-        name: "Madra Chaat",
-        description: "Chickpeas in yogurt with pahadi spices",
-        personalNote: "As warming as your smile on cold evenings"
+        name: "Momos",
+        description: "Juicy dumplings wrapped in joy, spicy enough to make you coy.",
+        personalNote: "Our midnight momo runs — now served with love and chutney!"
       }
     ]
   },
@@ -37,80 +27,67 @@ const menuData = [
     subtitle: "Main courses cooked with heart and soul",
     items: [
       {
-        name: "Siddu with Ghee",
-        description: "Steamed wheat buns filled with walnuts and spices",
-        personalNote: "Reminds me of when we got caught in the rain"
+        name: "Chilli Mushroom",
+        description: "A fiery stir-fry with mountain bloom, bold like your eyes in a crowded room.",
+        personalNote: "Just like us — a little spicy, totally addictive."
       },
       {
-        name: "Chana Madra",
-        description: "Chickpeas cooked in yogurt gravy with local spices",
-        personalNote: "You said this was comfort food after our long hikes"
-      },
-      {
-        name: "Patrode with Pahadi Twist",
-        description: "Colocasia leaves with mountain herbs",
-        personalNote: "As complex and beautiful as our journey"
-      },
-      {
-        name: "Lingri Saag",
-        description: "Wild forest fern with cumin and garlic",
-        personalNote: "Remember when we foraged for these together?"
+        name: "Noodles",
+        description: "Twisty, tangle-y and fun to slurp, like our talks that never end with a burp.",
+        personalNote: "We’re like these noodles — tangled, but always together."
       }
     ]
   },
   {
-    title: "Meethi Baatien",
-    subtitle: "Sweet endings to savory beginnings",
+    title: "Pyar ki Meethi Baatien",
+    subtitle: "Desserts that melt hearts and sweeten moments",
     items: [
       {
-        name: "Aktori",
-        description: "Buckwheat pancake with wild honey",
-        personalNote: "Sweet like the words we whisper to each other"
+        name: "Ras Malai",
+        description: "Soft, creamy, and oh-so-indulgent, just like the way you make my heart feel.",
+        personalNote: "Each bite is a taste of heaven, just like every moment with you."
       },
       {
-        name: "Mittha Bhat",
-        description: "Sweet rice with dry fruits and saffron",
-        personalNote: "Golden like our sunsets at the mountain peak"
-      },
-      {
-        name: "Babroo",
-        description: "Fermented sweet bread with jaggery",
-        personalNote: "Warm like your hand in mine on cold nights"
-      },
-      {
-        name: "Khajoor Pinni",
-        description: "Date and walnut energy balls",
-        personalNote: "For all our future adventures together"
+        name: "Brownie",
+        description: "Warm, rich, and fudgy — a perfect treat, just like our perfect moments together.",
+        personalNote: "Like us — a little messy, but always sweet and satisfying."
       }
     ]
   },
   {
-    title: "Garam Jazbaat",
-    subtitle: "Hot drinks to warm the soul",
+    title: "Meethi Pyaali, Bubbly Baatein",
+    subtitle: "Sweet endings with a dash of sparkle",
     items: [
       {
-        name: "Kehwa Chai",
-        description: "Saffron tea with almonds and cardamom",
-        personalNote: "To celebrate all our nights under the stars"
+        name: "Sangria",
+        description: "Sweet, citrusy, and lightly buzzed — like your giggles after one glass.",
+        personalNote: "Let’s get tipsy on this and each other 💚"
       },
       {
-        name: "Badam Doodh",
-        description: "Warm almond milk with cinnamon",
-        personalNote: "Comfort in a cup, just like your presence"
+        name: "Mosqato",
+        description: "Bubbly and bright with a fruity kiss, just like your smile I can’t miss.",
+        personalNote: "Soft, sweet, and dangerously cute — like you when you pout."
+      }
+    ]
+  },
+  {
+    title: "Essentials",
+    subtitle: "Aadat-E-Ishq",
+    items: [
+      {
+        name: "Twin Pod",
+        description: "Two puffs, one heart — perfect for partners who hate being apart.",
+        personalNote: "You light it, I hold it. We’ve always shared more than just smoke."
       },
       {
-        name: "Buransh ka Kaadha",
-        description: "Rhododendron bark herbal tea",
-        personalNote: "Healing like your love has been for me"
-      },
-      {
-        name: "Adrak Chai",
-        description: "Spiced ginger tea with mountain herbs",
-        personalNote: "Strong and warming, like our connection"
+        name: "Mix Pod",
+        description: "A little bit of everything, just like the way love finds its way — smoky, sweet, and full of surprises.",
+        personalNote: "Like us on a hilltop — We might not always be perfect, but each puff from this mix pod reminds me of the beautiful mess we are."
       }
     ]
   }
 ];
+
 
 const Index = () => {
   useEffect(() => {

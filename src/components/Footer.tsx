@@ -17,7 +17,8 @@ const Footer = () => {
           </p>
           
           <div className="mt-8 pt-6 border-t border-dashed border-gray-200 text-sm text-gray-500">
-            <p>Made with love in the mountains</p>
+            <p>If this menu touched your heart,
+            come back soon and we'll never be apart.</p>
           </div>
         </div>
       </div>

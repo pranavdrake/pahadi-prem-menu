@@ -55,7 +55,7 @@ const Hero = () => {
         </div>
         
         <p className="text-lg md:text-xl text-pine-dark/90 mb-8 font-sans font-light">
-          Aaj raat sirf hum dono ke liye – Sharma Bhojnalya mein prem paros rahe hain.
+        Between every course, there’s a little bit more that I’m saving for later.
         </p>
         
         <div className="inline-block animate-float">

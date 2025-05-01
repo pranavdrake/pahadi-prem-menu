@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { Heart } from 'lucide-react';
 
@@ -17,12 +16,12 @@ interface MenuSectionProps {
 
 const MenuItem = ({ name, description, personalNote }: MenuItemProps) => {
   return (
-    <div className="menu-card bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md mb-6">
+    <div className="menu-card bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-md h-full flex flex-col">
       <h3 className="text-xl font-handwriting mb-2 flex items-center">
         {name}
         <Heart className="text-green-500 h-4 w-4 ml-2" />
       </h3>
-      <p className="text-gray-700 mb-3 text-sm">{description}</p>
+      <p className="text-gray-700 mb-3 text-sm flex-grow">{description}</p>
       <p className="text-pine-dark italic border-t border-dashed border-gray-200 pt-2 mt-2 text-sm font-medium">"{personalNote}"</p>
     </div>
   );
@@ -66,7 +65,7 @@ const MenuSection = ({ title, subtitle, items, index }: MenuSectionProps) => {
         
         <div className="grid md:grid-cols-2 gap-6">
           {items.map((item, i) => (
-            <div key={i} className="reveal" style={{ transitionDelay: `${0.2 + i * 0.1}s` }}>
+            <div key={i} className="reveal h-full" style={{ transitionDelay: `${0.2 + i * 0.1}s` }}>
               <MenuItem {...item} />
             </div>
           ))}
