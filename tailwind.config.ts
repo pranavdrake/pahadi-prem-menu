@@ -66,7 +66,7 @@ export default {
 				pine: {
 					light: '#F2FCE2',
 					DEFAULT: '#3E5641',
-					dark: '#052211'
+					dark: '#2C3E2F'
 				},
 				mountain: {
 					mist: '#F1F0FB',
@@ -122,8 +122,7 @@ export default {
 				'flutter': 'flutter 6s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'pine-gradient': 'linear-gradient(135deg, #052211 0%, #3E5641 100%)',
-				'pine-light-gradient': 'linear-gradient(135deg, #3E5641 0%, #6BCA8E 100%)',
+				'pine-gradient': 'linear-gradient(135deg, #FFFFFF 0%, #F2FCE2 100%)',
 				'wood-texture': 'url("/wood-texture.png")'
 			},
 			fontFamily: {
