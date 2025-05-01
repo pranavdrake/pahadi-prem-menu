@@ -74,7 +74,7 @@ const PhotoCarousel = () => {
           isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
         )}>
           <h2 className="text-3xl md:text-4xl mb-8 text-center font-handwriting text-pine-dark">
-            Mountain Memories
+            Waqt ki Baatein
           </h2>
           
           <div className="relative pb-12">
