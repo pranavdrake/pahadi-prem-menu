@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 const menuData = [
   {
-    title: "Mohabbat ki Pehli Bhook – Shuruat Siddu aur Momon se",
+    title: "Mohabbat ki Pehli Bhook – Shuruat Siddu aur Momo se",
   subtitle: "The first taste of love, wrapped in warmth and spice",
     items: [
       {
