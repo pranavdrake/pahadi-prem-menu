@@ -12,20 +12,33 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-pine-light/90 to-white/90 -z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-theme-black/90 to-theme-black/70 -z-10"></div>
       
-      <div className="absolute top-10 left-10 animate-sway opacity-60">
-        <TreePine size={40} className="text-pine-dark" />
+      <div className="absolute top-10 left-10 animate-sway opacity-80">
+        <TreePine size={40} className="text-theme-gold" />
       </div>
       
       <div className="absolute top-20 right-10 animate-float opacity-70">
-        <CloudMoon size={30} className="text-pine-dark" />
+        <CloudMoon size={30} className="text-theme-gold" />
+      </div>
+      
+      {/* Pine Trees Forest Elements */}
+      <div className="absolute bottom-0 left-0 right-0 flex justify-between">
+        {[1, 2, 3, 4, 5, 6, 7].map((_, index) => (
+          <div key={index} className="relative" style={{ height: `${70 + index * 10}px` }}>
+            <TreePine 
+              size={30 + (index * 8)} 
+              className="text-theme-gold opacity-70 animate-sway" 
+              style={{ animationDelay: `${index * 0.4}s` }}
+            />
+          </div>
+        ))}
       </div>
       
       {/* Prayer flags */}
       <div className="absolute top-0 left-0 right-0 flex justify-center w-full">
         <div className="flex space-x-2">
-          {['bg-red-400', 'bg-blue-400', 'bg-yellow-300', 'bg-green-400', 'bg-white'].map((color, index) => (
+          {['bg-red-500', 'bg-theme-gold', 'bg-theme-yellow', 'bg-theme-gold', 'bg-red-500'].map((color, index) => (
             <div 
               key={index}
               className={`${color} h-16 w-12 animate-flutter`} 
@@ -42,19 +55,19 @@ const Hero = () => {
       <div 
         className={`max-w-3xl transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
       >
-        <h1 className="text-5xl md:text-7xl mb-4 text-pine-dark drop-shadow-sm">
+        <h1 className="text-5xl md:text-7xl mb-4 text-theme-gold drop-shadow-sm">
           Sharma Bhojnalya
         </h1>
         
         <div className="flex items-center justify-center mb-6 space-x-2">
-          <Heart className="text-green-500 animate-pulse" size={24} />
-          <p className="text-xl md:text-2xl text-pine-dark font-handwriting">
+          <Heart className="text-theme-gold animate-pulse" size={24} />
+          <p className="text-xl md:text-2xl text-theme-yellow font-handwriting">
             jahan khana bhi prem se pakta hai
           </p>
-          <Heart className="text-green-500 animate-pulse" size={24} />
+          <Heart className="text-theme-gold animate-pulse" size={24} />
         </div>
         
-        <p className="text-lg md:text-xl text-pine-dark/90 mb-8 font-sans font-light">
+        <p className="text-lg md:text-xl text-theme-gold/90 mb-8 font-sans font-light">
           Aaj raat sirf hum dono ke liye – Sharma Bhojnalya mein prem paros rahe hain.
         </p>
         
@@ -64,7 +77,7 @@ const Hero = () => {
               top: window.innerHeight,
               behavior: 'smooth'
             })}
-            className="bg-pine-dark text-white font-medium py-2 px-6 rounded-full hover:bg-opacity-90 transition-all flex items-center"
+            className="bg-theme-gold text-theme-black font-medium py-2 px-6 rounded-full hover:bg-theme-yellow transition-all flex items-center"
           >
             <span>Explore Menu</span>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">

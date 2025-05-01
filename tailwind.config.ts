@@ -63,6 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
+				theme: {
+					black: '#000000',
+					gold: '#D4AF37',
+					yellow: '#FFD700',
+					'gold-light': '#F5E7A9'
+				},
 				pine: {
 					light: '#F2FCE2',
 					DEFAULT: '#3E5641',
@@ -122,7 +128,8 @@ export default {
 				'flutter': 'flutter 6s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'pine-gradient': 'linear-gradient(135deg, #FFFFFF 0%, #F2FCE2 100%)',
+				'pine-gradient': 'linear-gradient(135deg, #000000 0%, #D4AF37 100%)',
+				'gold-gradient': 'linear-gradient(135deg, #D4AF37 0%, #FFD700 100%)',
 				'wood-texture': 'url("/wood-texture.png")'
 			},
 			fontFamily: {
